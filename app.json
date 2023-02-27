@@ -1,51 +1,103 @@
 {
-    "name": "Auto Approove Bot",
-    "description": "Auto approove telegram group/channel join requests bot.",
-    "repository": "https://github.com/ImDenuwan/Auto-Approve-Bot",
-    "logo":"https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg",
+
+    "name": "Auto-Approved-Bot",
+
+    "description": "Iam Auto-Approved-Bot @pr0fess0r_99",
+
     "keywords": [
-        "Bot",
-        "Telegram ",
-        "Pyrogram "
+
+        "Auto",
+
+        "Approved",
+
+        "Group",
+
+        "Invite",
+
+        "Link",
+
+        "Bot"
+
     ],
-    
+
+    "website": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
+
+    "repository": "https://github.com/PR0FESS0R-99/Auto-Approved-Bot",
+
+    "success_url": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
+
     "env": {
-    "API_ID": {
-      "description": "Enter your API_ID, get it from my.telegram.org/apps",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "Enter your API_HASH, get it from my.telegram.org/apps",
-      "required": true
-    },
-    "BOT_TOKEN": {
-      "description": "Enter your Bot token, get it from @BotFather",
-      "required": true
-    },
-    "CHID": {
+
+        "API_ID": {
+
+            "description": "Your APP ID From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+
+            "value": ""
+
+        },
+
+        "API_HASH": {
+
+            "description": "Your API Hash From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+
+            "value": ""
+
+        },
+
+        "BOT_TOKEN": {
+
+            "description": "Your Bot Token From @BotFather",
+
+            "value": ""
+
+        },
+
+        "CHID": {
+
       "description": "Enter your Force Subscribe channel ID",
+
       "required": true
-    },,
+
+    },
+
     "FSUB": {
+
       "description": "Enter your Force Subscribe channel Username without @",
+
       "required": true
-    },,
+
+    },
+
     "SUDO": {
+
       "description": "Enter Bot Owners IDS",
+
       "required": true
+
     }
-        
-  },
-  
-    "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
+
+    },
+
     "buildpacks": [
+
         {
+
             "url": "heroku/python"
+
         }
-    ]
+
+    ],
+
+    "formation": {
+
+        "worker": {
+
+            "quantity": 1,
+
+            "size": "eci"
+
+        }
+
+    }
+
 }
